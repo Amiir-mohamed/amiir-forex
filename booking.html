@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> AMIIR FX - Booking</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header section with navigation -->
+    <header>
+        <h1>AMIIR FX</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="booking.html" class="active">Booking</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main content -->
+    <main>
+        <section class="booking-section">
+            <h2>Book a Forex Learning Session</h2>
+            <p>Fill out the form below to register for our forex trading workshop.</p>
+            
+            <form class="booking-form">
+                <!-- Personal Information -->
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    
+                    <div class="form-group">
+                        <label for="fullname">Full Name:</label>
+                        <input type="text" id="fullname" name="fullname" required placeholder="Enter your full name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Gender:</label>
+                        <div class="radio-group">
+                            <input type="radio" id="male" name="gender" value="male" required>
+                            <label for="male">Male</label>
+                            <input type="radio" id="female" name="gender" value="female" required>
+                            <label for="female">Female</label>
+                            <input type="radio" id="other" name="gender" value="other" required>
+                            <label for="other">Other</label>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <!-- Educational Background -->
+                <fieldset>
+                    <legend>Educational Background</legend>
+                    
+                    <div class="form-group">
+                        <label for="major">Major/Field of Study:</label>
+                        <select id="major" name="major" required>
+                            <option value="">Select your major</option>
+                            <option value="Basic">Basic</option>
+                            <option value="Intermidian">Intermidian</option>
+                            <option value="Advancesd">Advanced</option>
+                          >
+                        </select>
+                    </div>
+                </fieldset>
+
+                <!-- Interests -->
+                <fieldset>
+                    <legend>Trading Interests</legend>
+                    
+                    <div class="form-group">
+                        <label>Areas of Interest (check all that apply):</label>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="technical-analysis" name="interests" value="technical-analysis">
+                            <label for="technical-analysis">Technical Analysis</label>
+                            
+                            <input type="checkbox" id="fundamental-analysis" name="interests" value="fundamental-analysis">
+                            <label for="fundamental-analysis">Fundamental Analysis</label>
+                            
+                            <input type="checkbox" id="risk-management" name="interests" value="risk-management">
+                            <label for="risk-management">Risk Management</label>
+                            
+                            <input type="checkbox" id="trading-psychology" name="interests" value="trading-psychology">
+                            <label for="trading-psychology">Trading Psychology</label>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <!-- Additional Information -->
+                <fieldset>
+                    <legend>Additional Information</legend>
+                    
+                    <div class="form-group">
+                        <label for="comments">Comments or Questions:</label>
+                        <textarea id="comments" name="comments" rows="5" placeholder="Tell us about your trading experience or any specific questions you have..."></textarea>
+                    </div>
+                </fieldset>
+
+                <div class="form-actions">
+                    <button type="submit">Submit Registration</button>
+                    <button type="reset">Clear Form</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer section -->
+    <footer>
+        <p>&copy; 2025 AMIIR FX. Faysal Mohamed sheihk don.</p>
+    </footer>
+</body>
+</html>
